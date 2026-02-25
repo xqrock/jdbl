@@ -41,5 +41,9 @@ find ./ | grep Makefile | grep mosdns | xargs rm -f
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 git clone https://github.com/sirpdboy/luci-app-adguardhome package/luci-app-adguardhome
-merge_package https://github.com/kiddin9/kwrt-packages kwrt-packages/wrtbwmon
-merge_package https://github.com/kiddin9/kwrt-packages kwrt-packages/luci-app-wrtbwmon
+git clone --depth=1 https://github.com/padavanonly/immortalwrt-mt798x-6.6 temp_repo
+cp -rn temp_repo/package/mtk/applications/wrtbwmon package/
+cp -rn temp_repo/package/mtk/applications/luci-app-wrtbwmon package/
+rm -rf feeds/luci/applications/luci-app-wrtbwmon
+rm -rf feeds/packages/net/wrtbwmon
+rm -rf temp_repo
