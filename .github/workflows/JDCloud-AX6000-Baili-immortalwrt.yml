@@ -168,7 +168,7 @@ jobs:
         rm -rf packages
         
         # 2. 遍历并重命名文件 
-        for file in $(ls *.bin *.img.gz *.manifest 2>/dev/null);
+        for file in $(ls *.bin *.img.gz *.manifest *.itb 2>/dev/null);
         do
           # 提取文件名主体（不含扩展名）
           BASE_NAME="${file%.*}"
