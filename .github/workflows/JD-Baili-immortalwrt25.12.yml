@@ -28,8 +28,8 @@ env:
   REPO_BRANCH: openwrt-25.12
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: JDCloud-AX6000-Baili-immortalwrt/immortalwrt.config
-  DIY_P1_SH: JDCloud-AX6000-Baili-immortalwrt/diy-part1.sh
-  DIY_P2_SH: JDCloud-AX6000-Baili-immortalwrt/diy-part2.sh
+  DIY_P1_SH: JDCloud-AX6000-Baili-immortalwrt/part1.sh
+  DIY_P2_SH: JDCloud-AX6000-Baili-immortalwrt/part2.sh
   SSH_ACTIONS: true
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
