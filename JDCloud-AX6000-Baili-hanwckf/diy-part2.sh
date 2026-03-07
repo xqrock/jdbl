@@ -21,10 +21,7 @@ rm -rf feeds/luci/applications/luci-app-wechatpush
 rm -rf feeds/luci/applications/luci-app-vssr
 ##-----------------Manually set CPU frequency for MT7986A-----------------
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
-git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages package/diy/passwall-packages
 rm -rf feeds/luci/applications/luci-app-passwall
-git clone https://github.com/Openwrt-Passwall/openwrt-passwall package/diy/passwall-luci
-git clone https://github.com/Openwrt-Passwall/openwrt-passwall package/diy/passwall2
 
 # 自动化清理冲突包 (核心完善版)
 function auto_remove_conflicts() {
