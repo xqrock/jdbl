@@ -50,3 +50,4 @@ git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/diy/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/diy/v2ray-geodata
 git clone https://github.com/sirpdboy/luci-app-adguardhome package/diy/luci-app-adguardhome
 extract_pkg "https://github.com/kenzok8/openwrt-packages" "adguardhome" "package/diy/adguardhome"
+extract_pkg "https://github.com/vernesong/OpenClash" "luci-app-openclash" "package/diy/luci-app-openclash"
