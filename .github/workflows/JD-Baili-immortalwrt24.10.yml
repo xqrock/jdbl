@@ -257,7 +257,7 @@ jobs:
         fi
 
         # 输出 Release 标签名
-        echo "release_tag=24-${{ env.DEVICE_NAME }}-${{ env.FILE_DATE }}" >> $GITHUB_OUTPUT
+        echo "release_tag=2410-${{ env.DEVICE_NAME }}-${{ env.FILE_DATE }}" >> $GITHUB_OUTPUT
         echo "status=success" >> $GITHUB_OUTPUT
         
     - name: 发布固件至Release
@@ -279,7 +279,7 @@ jobs:
         retain_days: 1
         keep_minimum_runs: 2
         # 显式指定只清理当前这个工作流，防止误伤
-        workflow_id: ${{ github.workflow }}
+        delete_workflow_pattern: "${{ github.workflow }}"
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@master
@@ -287,6 +287,6 @@ jobs:
       with:
         keep_latest: 2
         delete_tags: true
-        filter_tags: "24-*"
+        delete_tag_pattern: "2410-.*"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
