@@ -21,6 +21,8 @@ on:
 #  schedule:
 #    - cron: 0 16 * * *
 
+permissions: write-all
+
 env:
   ###############手动修改##############
   OPENWRT_NAME: padavanonly
@@ -34,8 +36,6 @@ env:
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-
-permissions: write-all
 
 jobs:
   build:
