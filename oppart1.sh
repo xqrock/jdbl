@@ -51,7 +51,7 @@ function extract_pkg() {
 # 移植 immortalwrt 25.12 分支的插件
 # extract_pkg "https://github.com/immortalwrt/luci" "applications/luci-app-eqos" "package/luci-app-eqos" "openwrt-25.12"
 
-git clone https://github.com/jerrykuku/luci-theme-argon.git
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git package/passwall-packages
 git clone https://github.com/Openwrt-Passwall/openwrt-passwall.git package/passwall-luci
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/OpenWrt-nikki
