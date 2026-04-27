@@ -30,4 +30,4 @@ rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 26.x feeds/packages/lang/golang
 #修复Rust编译失败
 sed -i 's/ci-llvm=true/ci-llvm=false/g' feeds/packages/lang/rust/Makefile
-sed -i 's/mt7981b.dtsi/mt7981.dtsi/g' target/linux/mediatek/dts/*.dts*
+#sed -i 's/mt7981b.dtsi/mt7981.dtsi/g' target/linux/mediatek/dts/*.dts*
