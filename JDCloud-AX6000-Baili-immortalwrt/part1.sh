@@ -40,7 +40,6 @@ git clone https://github.com/Openwrt-Passwall/openwrt-passwall.git package/passw
 git clone https://github.com/nikkinikki-org/OpenWrt-nikki.git package/OpenWrt-nikki
 git clone https://github.com/tty228/luci-app-wechatpush.git package/luci-app-wechatpush
 git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
-git clone https://github.com/gngpp/luci-theme-design.git package/luci-theme-design
 git clone https://github.com/sirpdboy/luci-app-advanced.git package/luci-app-advanced
 find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
 find ./ | grep Makefile | grep mosdns | xargs rm -f
